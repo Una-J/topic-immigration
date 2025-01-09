@@ -77,7 +77,7 @@ def update_plot(date_slider_value, current_figure):
 
     fig = px.scatter(
         filtered_data, x='x', y='y', color='Topic Number', size='marker_size', render_mode='webgl',
-        hover_data={'Topic Number': True, 'Topic Label': True, 'Number of Posts': True, 'createdAt': False, 'marker_size':False, 'x': False, 'y':False},
+        hover_data={'Topic Number': True, 'Topic Label': True, 'Toxicity': True, 'Number of Posts': True, 'createdAt': False, 'marker_size':False, 'x': False, 'y':False},
         custom_data=['Topic Number'],
         title=f'157 Topics of U.S. Immigration Posts on X<br>(April 17th to October 27th, 2023)',
         color_discrete_map=color_mapping['Topic Number'],
